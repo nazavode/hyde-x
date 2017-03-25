@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="{{ "/css/hyde-overrides.css" | absURL }}">
   <link rel="stylesheet" href="{{ "/css/hyde-x.css" | absURL }}">
   {{ if isset .Site.Params "highlight" }}<link rel="stylesheet" href="{{ "/css/highlight/" | absURL }}{{ .Site.Params.highlight }}.css">{{ end }}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:300,300i|Raleway" rel="stylesheet">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   {{ with .Site.Params.customCSS }}<link rel="stylesheet" href="{{ . }}">{{ end }}
 
@@ -44,7 +44,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ['Raleway']
+        families: ['Raleway', 'Fira Sans', 'Fira Mono']
       }
     });
   </script>
