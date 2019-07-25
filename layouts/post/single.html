@@ -10,6 +10,16 @@
     {{ .Content }}
   </div>
   {{ if .Site.DisqusShortname }}<div id="disqus_thread"></div>{{ end }}
+  {{ if .Site.Params.Utterances }}
+  <script src="https://utteranc.es/client.js"
+        repo="{{ .Site.Params.Utterances.Repo }}"
+        issue-term="{{ .Site.Params.Utterances.IssueTerm }}"
+        label="{{ .Site.Params.Utterances.IssueLabel }}"
+        theme="{{ .Site.Params.Utterances.Theme }}"
+        crossorigin="anonymous"
+        async>
+  </script>
+  {{ end }}
 </div>
 
 {{ with .Site.DisqusShortname }}
